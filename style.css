@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --Light-Green: #d8f3dc;
+    --Green: #2d6a4f;
+    --Dark-Green: #1b4332;
+    --Darker-Green: #081c15;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body{
+    background-color: var(--Darker-Green);
+}
+
+.navbar{
+    background-color: var(--Light-Green);
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--Darker-Green);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li{
+    margin-inline: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.main h1{
+    color: var(--Light-Green);
+    text-align: center;
+    font-size: 10vh;
+    margin:5px;
+}
+
+.main a{
+    text-decoration: none;
+    border-style: solid;
+    padding: 7px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons a{
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.contact{
+    color:var(--Light-Green);
+    border-color: var(--Light-Green);
+}
+
+.contact:hover{
+    color:var(--Darker-Green);
+    background-color: var(--Light-Green);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+}
+
+.products{
+    border-color: var(--Dark-Green);
+    background-color: var(--Dark-Green);
+    color:var(--Light-Green);
+}
+
+.products:hover{
+    background-color: var(--Light-Green);
+    color: var(--Dark-Green);
+    border-color: var(--Light-Green);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+
+}
