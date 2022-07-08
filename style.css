@@ -7,84 +7,93 @@
     --Darker-Green: #081c15;
 }
 
-*{
+* {
     box-sizing: border-box;
     font-family: roboto;
 }
 
-body{
+body {
+    background-color: var(--Darker-Green);
+    margin: 0px;
+}
+
+.navbar {
+    background-color: var(--Light-Green);
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+
+.navbar li{
+    margin: 14px 0px 14px 0px;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--Darker-Green);
+    padding: 14px 16px;
+}
+
+.navbar a:hover {
+    color: var(--Light-Green);
+    background-color: var(--Darker-Green);
+    transition-timing-function: linear;
+    transition-duration: 100ms;
+}
+
+#selected{
+    color: var(--Light-Green);
     background-color: var(--Darker-Green);
 }
 
-.navbar{
-    background-color: var(--Light-Green);
-    display: flex;  
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: var(--Darker-Green);
-}
-
-ul{
-    list-style: none;
-    display: flex;
-}
-
-.navbar ul li{
-    margin-inline: 10px;
-}
-
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 80vh;
 }
-.main h1{
+
+.main h1 {
     color: var(--Light-Green);
     text-align: center;
     font-size: 10vh;
-    margin:5px;
+    margin: 5px;
 }
 
-.main a{
+.main a {
     text-decoration: none;
     border-style: solid;
     padding: 7px;
 }
 
-.buttons{
+.buttons {
     display: flex;
 }
 
-.buttons a{
+.buttons a {
     margin: 10px;
     border-radius: 2px;
 }
 
-.contact{
-    color:var(--Light-Green);
+.contact {
+    color: var(--Light-Green);
     border-color: var(--Light-Green);
 }
 
-.contact:hover{
-    color:var(--Darker-Green);
+.contact:hover {
+    color: var(--Darker-Green);
     background-color: var(--Light-Green);
     transition-timing-function: linear;
     transition-duration: 100ms;
 }
 
-.products{
+.products {
     border-color: var(--Dark-Green);
     background-color: var(--Dark-Green);
-    color:var(--Light-Green);
+    color: var(--Light-Green);
 }
 
-.products:hover{
+.products:hover {
     background-color: var(--Light-Green);
     color: var(--Dark-Green);
     border-color: var(--Light-Green);
