@@ -45,7 +45,7 @@ body {
     background-color: var(--Darker-Green);
 }
 
-.main {
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,14 +53,14 @@ body {
     min-height: 80vh;
 }
 
-.main h1 {
+main h1 {
     color: var(--Light-Green);
     text-align: center;
     font-size: 10vh;
     margin: 5px;
 }
 
-.main a {
+main a {
     text-decoration: none;
     border-style: solid;
     padding: 7px;
