@@ -63,11 +63,13 @@ main h1 {
 main h2 {
     color: var(--Green);
     opacity: 100%;
+    margin: 0px;
 }
 
 main p {
     color: var(--Light-Green);
     opacity: 70%;
+    text-align: center;
 }
 main a {
     text-decoration: none;
@@ -79,12 +81,16 @@ main a {
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .Poptions li{
     margin-inline: 10px;
     background-color: #2d6a4f;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Poptions img{
@@ -97,13 +103,22 @@ main a {
 .Poptions h2{
     color: white;
     text-align: center;
-    margin: 3px;
-}
-
+    margin: 10px 10px 0px 10px;
+}   
 .Poptions p{
     color: var(--Light-Green);
     text-align: center;
     margin: 2px;
+}
+
+.Poptions a{
+    text-align: center;
+    margin: 10px 50px 10px 50px ;
+    border-radius: 8px;
+}
+
+hr{
+    width: 250px;
 }
 .buttons {
     display: flex;
